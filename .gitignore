@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build output
+dist/
+dist-ssr/
+client/dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files — DO NOT commit secrets
+.env
+.env.local
+.env.*.local
+client/.env
+server/.env
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local only
+*.local
+dist-ssr/

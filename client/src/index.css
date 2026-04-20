@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0A0A0A;
+  --color-surface: #111111;
+  --color-border: #1F1F1F;
+  --color-text: #F0F0F0;
+  --color-muted: #666666;
+  --color-accent: #B8FF57;
+  --color-danger: #FF4646;
+
+  --font-display: "PP Editorial New", "Canela", serif;
+  --font-body: "Neue Haas Grotesk", "DM Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text font-body antialiased selection:bg-accent selection:text-black;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-wider uppercase font-normal;
+  }
+}
